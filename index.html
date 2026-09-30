@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In the Mind of Marco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Body content starts here  -->
+<body>
+<!-- Give Aria-roles to the main structural elements for accessibility -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" title="In the Mind of Marco">Home</a></li>
+                <li><a href="hobbies.html" title="My hobbies">My Hobbies</a></li>
+                <li><a href="portfolio.html" title="Photography portfolio">Photography Portfolio</a></li>
+                <li><a href="myfears.html" title="My Fears">My Fears</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section id="welcome" aria-labelledby="welcome-heading">
+            <h1 id="welcome-heading">In the Mind of Marco</h1>
+            <h2>Welcome!</h2>
+            <p>Welcome to my website! This is a place where I share my projects and ideas, along with some of my hobbies. I want this to be a place where I can document my journey, share my knowledge, and connect with like-minded individuals.</p>
+        </section>
+
+        <!-- About me section -->
+        <section id="about-me" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+        <p> Hi! I am Marco Aguilera, a passionate developer and hobbyist. I enjoy creating web applications, photography, traveling, and learning new skills.
+            <br>
+            I am a senior student studying Computer Information Technology at California State University, Northridge. I am passionate about developing innovative solutions and continuously improving my skills in the field.
+            I originally enrolled in Computer Science, but later switched to Computer Information Technology to better align with my career goals. In high school, I took coding courses that sparked my interest in technology and programming. I wanted to go into video game development, but I never had the opportunity to fully explore it. Instead, I focused on web development and other areas of software engineering that allowed me to apply my skills and creativity effectively.
+        </p>
+        </section>
+        <!-- My life section -->
+        <section id="my-life" aria-labelledby="my-life-heading">
+            <h2 id="my-life-heading">My Life</h2>
+            <p>I was born and raised in Los Angeles, California. My parents migrated from Mexico before I was born, seeking better opportunities and a brighter future for our family. I am the second of three children. I have an older brother and a younger sister, and we have always been close and shared many experiences growing up.</p>
+            <!-- Start of new idea, create a paragraph about growing up in Los Angeles -->
+            <p>Growing up in Los Angeles, I was exposed to a diverse and vibrant culture that shaped my perspective and interests. I developed a love for community and social interactions, which influenced my personal and professional growth.</p>
+        </section>
+        <!-- Childhood section -->
+        <section id="childhood" aria-labelledby="childhood-heading">
+            <h2 id="childhood-heading">Childhood</h2>
+            <p>During my childhood, I spent a lot of time playing video games with my cousins, playing outdoors, and engaging in various creative activities. Every Sunday morning my parents would take me and my siblings to church. I eventually grew to appreciate the sense of community and the moral lessons it provided.</p>
+        </section>
+        <!-- Teenage years section -->
+        <section id="teenage-years" aria-labelledby="teenage-years-heading">
+            <h2 id="teenage-years-heading">Teenage Years</h2>
+            <p>In high school, I made connections with people who I still keep in touch with today. I mainly met them through the cross-country team. I also participated in track and field during the spring season. These experiences helped me develop discipline and form lasting friendships.</p>
+            <p>In my senior year, I got my first job at El Pollo Loco. This was one of the best and worst experiences I have had. I struggled to balance work with my academic and personal commitments, which taught me to make significant changes in my life.</p>
+        </section>
+        <!-- Future goals section -->
+        <section id="future-goals" aria-labelledby="future-goals-heading">
+            <h2 id="future-goals-heading">Future Goals</h2>
+            <p>I hope to continue developing my skills, find a fulfilling job, and build a successful career that allows me to grow personally and professionally. I also hope to move out of my parents' house and build an independent life with my girlfriend.</p>
+        </section>
+    </main>
+        <footer role="contentinfo">
+            <p>
+                <!-- Use the span with the copyright class for the copyright symbol -->
+                <span class="copyright">&copy;</span> 2026 AguileraM. All rights reserved.</p>
+        </footer>
+</body>
+</html>

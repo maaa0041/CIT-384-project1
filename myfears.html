@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Fears</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" title="In the Mind of Marco">Home</a></li>
+                <li><a href="hobbies.html" title="My hobbies">My Hobbies</a></li>
+                <li><a href="portfolio.html" title="Photography portfolio">Photography Portfolio</a></li>
+                <li><a href="myfears.html" title="My fears" aria-current="page">My Fears</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="fears" aria-labelledby="fears-heading">
+            <h1 id="fears-heading">My Fears</h1>
+            <p>
+                Like everyone else, I have my fears and anxieties. Some of them are rational, while others are more irrational and difficult to explain.
+                One of my biggest fears is failing in my academic and professional pursuits. I often worry about not meeting my own expectations or the expectations of others.
+            </p>
+        </section>
+            <section id="mathematics" aria-labelledby="mathematics-heading">
+                <h2 id="mathematics-heading">Mathematics</h2>
+                <p>
+                    Throughout my academic career, one subject I have always been
+                    challenged by is mathematics. I was always decent at math until
+                    high school, when I started taking calculus-related courses.
+                </p>
+                <p>
+                    I never liked calculus, but I found the real-world applications
+                    extremely interesting. In high school, I was expected to take
+                    calculus because I was part of the STEM program, which emphasized
+                    advanced mathematics and science courses. I took precalculus twice
+                    because I wanted to improve my understanding and performance in
+                    the subject. Also, I was one of the only few students in my class who
+                    didn't cheat on the tests. Our teacher would leave as soon as the tests began
+                    to play chess in the class across the hall.
+                    I took AP Calculus AB in high school, which is the equivalent of
+                    Calculus I at the college level. I scored a 2 on the AP test,
+                    which was not high enough to earn college credit. I ended up taking
+                    Business Math in college, but I would one day like to revisit
+                    calculus and strengthen my understanding of the subject.
+                </p>
+
+                <math
+                    display="block"
+                    aria-label="The integral from 2 to 3 of 8 x cubed plus 3 x squared plus 6 x d x">
+                    <msubsup>
+                        <mo>&#x222B;</mo>
+                        <mn>2</mn>
+                        <mn>3</mn>
+                    </msubsup>
+                    <mo class="bracket">[</mo>
+                    <mn>8</mn>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>3</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>3</mn>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>6</mn>
+                    <mi>x</mi>
+                    <mo class="bracket">]</mo>
+                    <mi>d</mi>
+                    <mi>x</mi>
+                </math>
+                <!--Use this span to explain the integral above as a caption-->
+                <span>This integral represents the area under the curve of the function 8x cubed + 3x squared + 6x from x = 2 to x = 3.</span>
+            </section>
+
+            <section id="clowns" aria-labelledby="clowns-heading">
+                <h2 id="clowns-heading">Clowns</h2>
+                <p>
+                    Growing up, my family and I would rent movies and order pizza
+                    for movie nights. My dad loved horror movies, and I hated them.
+                    One time I tried to watch an entire movie with him. He was
+                    watching <em>It</em>, and I was terrified of clowns after only making it half way through the movie. That
+                    fear has lingered into adulthood.
+                </p>
+
+                <!-- Button to toggle clown image -->
+                 <!-- Giving the button an id to make it accesable for the script below along with aria attributes -->
+ <button type="button"
+        id="imageButton"
+        aria-controls="clownImage"
+        aria-expanded="false">
+    Show Image
+</button>
+
+<img id="clownImage"
+     src="images/clown.jpg"
+     alt="Clown"
+     hidden>
+
+
+            </section>
+        <!-- End of clowns section -->
+            <section id="falling" aria-labelledby="falling-heading">
+                <h2 id="falling-heading">Falling</h2>
+                <p>
+                    I have no issues whith heights, I can climb a ladder or stand on a high balcony without feeling dizzy or anxious. However, I do have a fear of falling, which can make certain activities challenging. I went to a ropes course once and found it extremely difficult to navigate the high elements due to my fear of falling. Despite being secured by safety harnesses and other saftey factors, the fear of falling still affected my performance and enjoyment of the activity.
+                </p>
+                <img class="photo" src="images/heights.jpg" alt="A picture taken from a high vantage point, looking down.">
+            </section>
+        <!-- End of falling section --> 
+
+    </main>
+
+   <footer role="contentinfo">
+        <p>
+            <!-- Use the span with the copyright class for the copyright symbol -->
+            <span class="copyright">&copy;</span> 2026 AguileraM. All rights reserved.</p>
+    </footer>
+
+<!-- SCRIPT FOR TOGGLING CLOWN IMAGE DONT TOUCH-->
+    <script>
+    const button = document.getElementById("imageButton");
+    const image = document.getElementById("clownImage");
+
+    button.addEventListener("click", function () {
+        image.hidden = !image.hidden;
+
+        if (image.hidden) {
+            button.textContent = "Show Image";
+            button.setAttribute("aria-expanded", "false");
+        } else {
+            button.textContent = "Hide Image";
+            button.setAttribute("aria-expanded", "true");
+        }
+    });
+</script>
+</body>
+</html>
